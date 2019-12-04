@@ -1,7 +1,13 @@
 from django.contrib import admin
+from import_export.admin import ImportExportModelAdmin
 from .models import * 
 # Register your models here.
-admin.site.register(City)
-admin.site.register(University)
-admin.site.register(Specialization)
-admin.site.register(Profession)
+
+@admin.register(City , University , Specialization , Profession)
+class AdminView(ImportExportModelAdmin):
+    pass
+
+# admin.site.register(City)
+# admin.site.register(University)
+# admin.site.register(Specialization)
+# admin.site.register(Profession)
