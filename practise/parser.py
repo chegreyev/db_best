@@ -10,4 +10,6 @@ def get_all():
 
 all = get_all()
 
-print(all[0]['location'])
+for i in all:
+    universities = i['location'][0]['university_name']
+    print(universities)

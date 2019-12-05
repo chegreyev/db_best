@@ -2,28 +2,28 @@ from django.db import models
 
 class City(models.Model):
 
-    city_name = models.CharField(max_length=100)
+    city_name = models.CharField(max_length=100 , primary_key = True)
 
     @property
-    def location(self):
-        return location.all()
+    def universities(self):
+        return universities.all()
 
     def __str__(self):
         return format(self.city_name)
 
 class University(models.Model):
 
-    location = models.ForeignKey(City , related_name = 'location' , on_delete = models.CASCADE)
+    location = models.ForeignKey(City , related_name = 'universities' , on_delete = models.CASCADE)
     university_name = models.CharField(max_length = 255)
-    university_code = models.IntegerField()
-    university_category = models.CharField(max_length= 255 , default = 'State')
-    university_type = models.CharField(max_length= 255 , default = 'University')
-    university_email = models.CharField(max_length=100)
-    university_site = models.CharField(max_length=100)
+    university_code = models.IntegerField(null = True , blank = True)
+    university_category = models.CharField(max_length= 255 , default = 'State' , null=True)
+    university_type = models.CharField(max_length= 255 , default = 'University' , null = True)
+    university_email = models.CharField(max_length=100 , null =True)
+    university_site = models.CharField(max_length=100 , null = True)
     military_dep = models.CharField(max_length=10 , default = 'No')
 
     @property
-    def univer_prof(self):
+    def univer_professions(self):
         return univer_prof.all()
 
     def __str__(self):
@@ -32,7 +32,7 @@ class University(models.Model):
     
 class Profesion(models.Model):
 
-    university = models.ForeignKey(University , related_name = 'univer_prof' , on_delete = models.CASCADE)
+    university = models.ForeignKey(University , related_name = 'university_professions' , on_delete = models.CASCADE)
     prof_title = models.CharField(max_length = 255)
     first_lesson = models.CharField(max_length = 100)
     second_lesson = models.CharField(max_length = 100)
@@ -45,7 +45,7 @@ class Profesion(models.Model):
         return '{} -> {}'.format(self.university ,self.prof_title)
 
 class Specialization(models.Model):
-    prof = models.ForeignKey(Profesion , related_name = 'spec_prof' , on_delete = models.CASCADE)
+    prof = models.ForeignKey(Profesion , related_name = 'profession_specializations' , on_delete = models.CASCADE)
 
     spec_code = models.CharField(max_length=10)
     spec_title = models.CharField(max_length = 255)
