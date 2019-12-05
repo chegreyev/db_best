@@ -10,4 +10,4 @@ def get_all():
 
 all = get_all()
 
-print(all[0]['town'])
+print(all[0]['location'])

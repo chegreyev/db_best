@@ -3,7 +3,7 @@ from import_export.admin import ImportExportModelAdmin
 from .models import * 
 # Register your models here.
 
-@admin.register(City , University , Specialization , Profession)
+@admin.register(City , University , Specialization , Profesion)
 class AdminView(ImportExportModelAdmin):
     pass
 

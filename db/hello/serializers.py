@@ -4,27 +4,27 @@ from .models import *
 class SpecializationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Specialization
-        fields = ['id' , 'title']
+        fields = ['id' , 'spec_code' , 'spec_title' , 'total_grant' , 'full_kz' , 'full_rus' , 'full_eng' , 'shortened_kz' ,'shortened_ru']
 
-class ProfessionSerializer(serializers.ModelSerializer):
+class ProfesionSerializer(serializers.ModelSerializer):
     spec_prof = SpecializationSerializer(many = True)
 
     class Meta:
-        model = Profession
-        fields = ['id' , 'code' , 'title' , 'first_lesson' , 'second_lesson' , 'spec_prof']
+        model = Profesion
+        fields = ['id' , 'prof_title' , 'first_lesson' , 'second_lesson' , 'spec_prof']
 
 class UniversitySerializer(serializers.ModelSerializer):
-    univer_prof = ProfessionSerializer(many = True)
+    univer_prof = ProfesionSerializer(many = True)
 
     class Meta:
         model = University
-        fields = ['id' , 'uni_name' , 'uni_code' , 'category' , 'uni_type' , 'military_department' ,'uni_email' , 'uni_site' ,'total_grant' , 'univer_prof']
+        fields = ['id' , 'university_name' , 'university_code' , 'university_category' , 'university_type' , 'military_dep' ,'university_email' , 'university_site' , 'univer_prof']
 
 
 class CitySerializer(serializers.ModelSerializer):
-    uni_city = UniversitySerializer(many = True)
+    location = UniversitySerializer(many = True)
 
     class Meta:
         model = City
-        fields = ['id' , 'town' , 'uni_city']
+        fields = ['id' , 'city_name' , 'location']
 
