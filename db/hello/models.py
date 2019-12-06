@@ -14,7 +14,7 @@ class City(models.Model):
 class University(models.Model):
 
     location = models.ForeignKey(City , related_name = 'universities' , on_delete = models.CASCADE)
-    university_name = models.CharField(max_length = 255)
+    university_name = models.CharField(max_length = 255 , primary_key = True)
     university_code = models.IntegerField(null = True , blank = True)
     university_category = models.CharField(max_length= 255 , default = 'State' , null=True)
     university_type = models.CharField(max_length= 255 , default = 'University' , null = True)
@@ -23,39 +23,26 @@ class University(models.Model):
     military_dep = models.CharField(max_length=10 , default = 'No')
 
     @property
-    def univer_professions(self):
-        return univer_prof.all()
+    def professions(self):
+        return profession.all()
 
     def __str__(self):
         return '{} -> {}'.format(self.location , self.university_name)
 
     
-class Profesion(models.Model):
+class Profession(models.Model):
 
-    university = models.ForeignKey(University , related_name = 'university_professions' , on_delete = models.CASCADE)
-    prof_title = models.CharField(max_length = 255)
-    first_lesson = models.CharField(max_length = 100)
-    second_lesson = models.CharField(max_length = 100)
-
-    @property
-    def spec_prof(self):
-        return spec_prof.all()
-
-    def __str__(self):
-        return '{} -> {}'.format(self.university ,self.prof_title)
-
-class Specialization(models.Model):
-    prof = models.ForeignKey(Profesion , related_name = 'profession_specializations' , on_delete = models.CASCADE)
-
-    spec_code = models.CharField(max_length=10)
-    spec_title = models.CharField(max_length = 255)
-    total_grant = models.IntegerField()
-    full_kz = models.IntegerField()
-    full_rus = models.IntegerField()
-    full_eng = models.IntegerField()
-    shortened_kz = models.IntegerField()
-    shortened_ru = models.IntegerField()
+    university = models.ForeignKey(University , related_name = 'professions' , on_delete = models.CASCADE)
+    prof_title = models.CharField(max_length=255)
+    first_lesson = models.CharField(max_length=100)
+    second_lesson = models.CharField(max_length=100)
+    total_grant = models.IntegerField(null = True)
+    full_kz = models.IntegerField(null = True)
+    full_ru = models.IntegerField(null = True)
+    full_en = models.IntegerField(null= True)
+    shortened_kz = models.IntegerField(null = True)
+    shortened_ru = models.IntegerField(null =True)
 
     def __str__(self):
-        return '{} -> {}'.format(self.prof , self.spec_title)
+        return '{}'.format(self.prof_title)
 

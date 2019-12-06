@@ -12,10 +12,7 @@ class CityView(generics.ListAPIView):
     serializer_class = CitySerializer
     queryset = City.objects.all()
 
-class ProfesionView(generics.ListAPIView):
-    serializer_class = ProfesionSerializer
-    queryset = Profesion.objects.all()
-
-class SpecializationView(generics.ListAPIView):
-    serializer_class = SpecializationSerializer
-    queryset = Specialization.objects.all()
+class ProfessionView(generics.ListAPIView):
+    serializer_class = ProfessionsSerializer
+    queryset = Profession.objects.all()
+    

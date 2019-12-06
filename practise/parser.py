@@ -11,5 +11,4 @@ def get_all():
 all = get_all()
 
 for i in all:
-    universities = i['location'][0]['university_name']
-    print(universities)
+    print(i['universities'][0]['university_name'])
