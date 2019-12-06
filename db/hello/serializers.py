@@ -11,7 +11,7 @@ class ProfesionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profesion
-        fields = ['id' , 'prof_title' , 'first_lesson' , 'second_lesson' , 'profession_specializations']
+        fields = ['prof_title' , 'first_lesson' , 'second_lesson' , 'profession_specializations']
 
 class UniversitySerializer(serializers.ModelSerializer):
     university_professions = ProfesionSerializer(many = True)
