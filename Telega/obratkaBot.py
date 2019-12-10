@@ -10,6 +10,7 @@ first_subject = ''
 second_subject = ''
 profession = ''
 city = ''
+university = ''
 
 @bot.message_handler(commands = ['univer'])
 def commanda(message):
@@ -36,7 +37,6 @@ def first(message):
     
     bot.send_message(message.from_user.id , 'Какой был второй предмет' , reply_markup=keyboard)
     bot.register_next_step_handler(message , second)
-
 
 def second(message):
     global second_subject , first_subject
@@ -78,9 +78,16 @@ def university_vybor(message):
         keyboard.add(univer) 
 
     bot.send_message(message.from_user.id , 'Вот и универы', reply_markup=keyboard)
+    bot.register_next_step_handler(message , university_info)
 
+def university_info(message):
+    global university
+    university = message.text
 
+    info = obratka.getUniversityInfo(university)
 
-
+    bot.send_message(message.from_user.id , info)
+    
 if __name__ == "__main__":
+    print('Bot has been started')
     bot.polling()

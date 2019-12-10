@@ -1,23 +1,27 @@
 import requests
 import json 
+
+# Just fot debugging
 from pprint import pprint
 
+# Local urls for each DB table 
+# Each of them have Rest api {json}
 city_url = 'http://127.0.0.1:8000/hello/city/'
 professions_url = 'http://127.0.0.1:8000/hello/professions/'
 universities_url = 'http://127.0.0.1:8000/hello/university/'
 
+# Getting the responce of the each table 
 responce_prof = requests.get(professions_url)
 responce_univer = requests.get(universities_url)
 responce_city = requests.get(city_url)
 
+# Converting the responces to the json object 
 def get_all__profession():
     json_obj = json.loads(responce_prof.content)
     return json_obj
-
 def get_all__univeristy():
     json_obj = json.loads(responce_univer.content)
     return json_obj
-
 def get_all__cities():
     json_obj = json.loads(responce_city.content)
     return json_obj
@@ -38,11 +42,7 @@ def getProfessionsBySubjects(first , second):
     profs = list(set(profs))
 
     return profs
-
-#'Physics' 'Maths'
-
-
-
+# Sorts all cities by profession
 def getCitiesByProfession(profession):
     global all__cities
 
@@ -56,7 +56,7 @@ def getCitiesByProfession(profession):
     
     cities = list(set(cities))
     return cities
-
+# Sorts all universities by professions
 def getUniversityByCity(city):
     global all__cities
 
@@ -68,7 +68,7 @@ def getUniversityByCity(city):
                 universities.append(uni['university_name'])
     
     return universities
-
+# Collecting all first subjects of ENT exam
 def getFirstSubjects():
     global all__profession
 
@@ -79,7 +79,7 @@ def getFirstSubjects():
 
     first_subjects = list(set(first_subjects))
     return first_subjects
-
+# Collecting all second subjects related to first subject
 def getSecondSubjects(first):
     global all__profession
 
@@ -91,9 +91,24 @@ def getSecondSubjects(first):
 
     second_subjects = list(set(second_subjects))
     return second_subjects
+# Getting all information about chosen university
+def getUniversityInfo(university):
+    global all__university
 
+    info = ''
+    for univer in all__university:
+        if univer['university_name'] == university:
+            info += '🔢Code of University: ' + str(univer['university_code'])
+            info += '\n🆒' + univer['university_name']
+            info += '\n✅' + 'Category of University: ' + univer['university_category']
+            info += '\n🛑' + 'Type of University: ' + univer['university_type']
+            info += '\n📑' + 'Military department: ' + univer['military_dep']
+            info += '\n🗳' + 'Official website: ' + univer['university_site']
+            info += '\n📬' + 'Official email address: ' + univer['university_email']
 
+    return info
 
+# --------------------DEBUG--------------------
 # print(getCitiesByProfession('Computer Engineering and Software'))
 # print(getProfessionsBySubjects('Maths' , 'Physics' )) 
 # print(getUniversityByProfession('Computer Engineering and Software'))
