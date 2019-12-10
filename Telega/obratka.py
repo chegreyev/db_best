@@ -9,6 +9,8 @@ from pprint import pprint
 city_url = 'http://127.0.0.1:8000/hello/city/'
 professions_url = 'http://127.0.0.1:8000/hello/professions/'
 universities_url = 'http://127.0.0.1:8000/hello/university/'
+users_url = 'http://127.0.0.1:8000/hello/users/'
+users_rating_url = 'http://127.0.0.1:8000/hello/users/ratings/'
 
 # Getting the responce of the each table 
 responce_prof = requests.get(professions_url)
@@ -107,6 +109,29 @@ def getUniversityInfo(university):
             info += '\n📬' + 'Official email address: ' + univer['university_email']
 
     return info
+# Posting info to DB
+def registerUser(user_id , user_login , password):
+    global users_url
+
+    data = {
+        'user_id': user_id ,
+        'user_login' : user_login ,
+        'password' : password
+    }
+
+    requests.post(users_url , data)
+# Register data for rating the University
+def registerUserRating(user_id , profession , universitie_name , universitie_rating):
+    global users_rating_url
+
+    data = {
+        'user_id' : user_id , 
+        'profession' : profession , 
+        'university_name' : universitie_name , 
+        'university_rating' : universitie_rating
+    }
+
+    requests.post(users_rating_url , data)
 
 # --------------------DEBUG--------------------
 # print(getCitiesByProfession('Computer Engineering and Software'))

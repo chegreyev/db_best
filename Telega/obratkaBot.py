@@ -11,6 +11,9 @@ second_subject = ''
 profession = ''
 city = ''
 university = ''
+user_login = ''
+user_password = ''
+rating = 0  
 
 @bot.message_handler(commands = ['univer'])
 def commanda(message):
@@ -21,7 +24,7 @@ def commanda(message):
     for fs in first_subjects:
         keyboard.add(fs)
 
-    bot.send_message(message.from_user.id , 'Какой был первый предмет' , reply_markup=keyboard)
+    bot.send_message(message.from_user.id , 'Какой был первый предмет на ЕНТ' , reply_markup=keyboard)
     bot.register_next_step_handler(message , first)
 
 def first(message):
@@ -86,8 +89,51 @@ def university_info(message):
 
     info = obratka.getUniversityInfo(university)
 
-    bot.send_message(message.from_user.id , info)
+    keyboard = types.ReplyKeyboardMarkup()
+
+    keyboard.add('1' , '2' , '3' , '4' , '5' , '/univer')
+
+    bot.send_message(message.from_user.id , info + '\n\nОцените униврситет по этим данным\nОценка от 1-5\nЧисленно - это обязательно' , reply_markup=keyboard)
+
+    bot.register_next_step_handler(message , rating)
+
+def rating(message):
+    global rating , profession , university
+    try:
+        rating = int(message.text)
     
+        user_id = message.from_user.id
+
+        obratka.registerUserRating(user_id , profession , university , rating)
+        # DEBUG USER ID
+        print(str(user_id))
+        bot.send_message(message.from_user.id , 'Ваша оценка зарегестрирована')
+    except Exception:
+        bot.send_message(message.from_user.id , 'Вы ввели неправильную оценку или в тексте\nВведите цифрой пожалуйста')
+      
+@bot.message_handler(commands = ['login'])
+def loginUser(message):
+    bot.send_message(message.from_user.id , 'Зарегестрироваться желаете ?\nОтлично введите свой логин: ')
+    bot.register_next_step_handler(message , login)
+
+def login(message):
+    global user_login
+    user_login = message.text 
+
+    bot.send_message(message.from_user.id , 'Теперь пароль: ')
+    bot.register_next_step_handler(message , password)
+
+def password(message):
+    global user_password
+    user_password = message.text
+
+    user_id = int(message.from_user.id)
+
+    obratka.registerUser(user_id , user_login , user_password)
+
+    bot.send_message(message.from_user.id , 'Отлично теперь вы зарегестрированы')
+
+
 if __name__ == "__main__":
     print('Bot has been started')
     bot.polling()
