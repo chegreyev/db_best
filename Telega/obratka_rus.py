@@ -6,11 +6,11 @@ from pprint import pprint
 
 # Local urls for each DB table 
 # Each of them have Rest api {json}
-city_url = 'http://127.0.0.1:8000/hello/city/'
-professions_url = 'http://127.0.0.1:8000/hello/professions/'
-universities_url = 'http://127.0.0.1:8000/hello/university/'
-users_url = 'http://127.0.0.1:8000/hello/users/'
-users_rating_url = 'http://127.0.0.1:8000/hello/users/ratings/'
+city_url = 'http://127.0.0.1:8000/rus/city/'
+professions_url = 'http://127.0.0.1:8000/rus/professions/'
+universities_url = 'http://127.0.0.1:8000/rus/university/'
+users_url = 'http://127.0.0.1:8000/rus/users/'
+users_rating_url = 'http://127.0.0.1:8000/rus/users/ratings/'
 
 # Getting the responce of the each table 
 responce_prof = requests.get(professions_url)
