@@ -117,7 +117,7 @@ def rating(message):
         user_id = message.from_user.id
         libr.registerUserRating(user_id , profession , university , user_rating)
 
-        bot.send_message(message.from_user.id , 'Your rating have been registered!\nThank you it will help us to give more relevant informations to the next users.')
+        bot.send_message(message.from_user.id , 'Your rating has been registered!\nThank you it will help us to give more relevant informations to the next users.')
     except Exception:
         bot.send_message(message.from_user.id , "Oops!Maybe you have been filled with string or something else...\nPlease fill that with numbers. Thank you!")
       

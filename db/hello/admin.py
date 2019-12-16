@@ -7,6 +7,8 @@ from .models import *
 class AdminView(ImportExportModelAdmin):
     pass
 
+admin.site.register(TUser)
+admin.site.register(TUserRating)
 # admin.site.register(City)
 # admin.site.register(University)
 # admin.site.register(Specialization)

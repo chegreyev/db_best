@@ -1,0 +1,113 @@
+location,university_name,university_code,university_category,university_type,university_email,university_site,military_dep
+Astana,Kazakh Agrotechnical University named after S. Seifullin,2,Stocked,University,agun.katu@gmail.com,kazatu.kz,Yes
+Aktau,Caspian State University of Technology and Engineering named after S. Yesenov,3,State,University,ksu@kguti.kz,kguti.kz,Yes
+Aktobe,West Kazakhstan State Medical University named after M. Ospanov,4,State,University,info@zkgmu.kz,new.zkgmu.kz,Yes
+Aktobe,Aktobe State Regional University named after K.Zhubanov,5,State,University,info@arsu.kz,arsu.kz,No
+Almaty,Kazakh National Conservatory named after Kurmangazy,6,National,Conservatory,info@conservatoire.kz,conservatoire.kz,No
+Almaty,Kazakh National Pedagogical University named after Abay,7,National,University,rector@kaznpu.kz,kaznpu.kz,Yes
+Arkalyk,Arkalyk State Pedagogical Institute named after I. Altynsarin,8,State,Institute,arkgpi@mail.ru,api.kz,No
+Atyrau,Atyrau University of Oil and Gas,9,State,Institute,edu@aogu.kz,ainig.kz,No
+Atyrau,Atyrau State University named after H. Dosmukhamedov,10,State,University,kense@asu.edu.kz,asu.edu.kz,Yes
+Ust-Kamenogorsk,East Kazakhstan State University named after S. Amanzholov,11,State,University,kense@vkgu.kz,vkgu.kz,No
+Ust-Kamenogorsk,East Kazakhstan State Technical University named after D. Serikbayev,12,State,University,kanc_ekstu@mail.ru,ektu.kz,Yes
+Astana,Eurasian National University named after L. N. Gumilyov,13,National,University,enu@enu.kz,enu.kz,Yes
+Zhezkazgan,Zhezkazgan University named after O. A. Baikonurov,14,Stocked,University,univer_Zhez@mail.ru,zhezu.kz/,No
+Taldykorgan,Zhetysu State University named after I. Zhansugurov,15,State,University,vuz@zhgu.edu.kz,zhgu.edu.kz,Yes
+Uralsk,West Kazakhstan State University named after M. Utemisov,16,State,University,info@wksu.kz,-,No
+Almaty,Kazakh National Academy of Arts named after T.K. Zhurgenov,17,National,Academy,kaznai@art-1r.kz,kaznai.kz,No
+Astana,Kazakh National University of Arts,18,National,University,kaznam98@mail.ru,kaznui.kz/ru/,No
+Almaty,Kazakh Academy of Transport and Communications named after M. Tynyshpayev,19,Stocked,Academy,info@kazatk.kz,kazatk.kz,No
+Almaty,Kazakh Academy of Sports and Tourism,20,Stocked,Academy,kazsport@inbox.ru,kazast.kz,No
+Almaty,University of Narxoz,21,Private,University,narxoz@narxoz.kz,narxoz.kz,Yes
+Almaty,International Education Corporation,22,Stocked,Academy,info@mok.kz,mok.kz,No
+Almaty,Kazakh University of International Relations and World Languages ​​named after Abylay Khan,23,Stocked,University,kazumo@ablaikhan.kz,ablaikhan.kz,Yes
+Almaty,Kazakh National Agrarian University,24,National,University,info@kaznau.kz,kaznau.kz,Yes
+Almaty,Kazakh State Women's Pedagogical University,25,State,University,info@kazmkpu.kz,kazmkpu.kz,No
+Almaty,Al-Farabi Kazakh National University,27,National,University,info@kaznu.kz,kaznu.kz,Yes
+Almaty,Kazakh National Research Technical University named after K.I.Satpayev,29,National,University,allnt@ntu.kz,kaznitu.kz,Yes
+Karaganda,Karaganda State University named after E. A. Buketov,31,State,University,office@ksu.kz,ksu.kz,Yes
+Karaganda,Karaganda State Technical University,32,State,University,kargtu@kstu.kz,kstu.kz,Yes
+Karaganda,Temirtau,33,State,University,kgiu@mail.ru,kgiu.kz,No
+Karaganda,Karaganda State Industrial University,33,State,University,kgiu@mail.ru,kgiu.kz,No
+Kyzylorda,Kyzylorda State University named after Korkyt Ata,34,State,University,korkyt_ksu@mail.ru,korkyt.kz,Yes
+Kokshetau,Kokshetau State University named after Sh. Ualikhanov,35,State,University,mail@kgu.kz,kgu.kz,No
+Kostanay,Kostanay State University named after A. Baitursynov,36,State,University,info@ksu.edu.kz,ksu.edu.kz,Yes
+Turkestan,International Kazakh-Turkish University named after H.A. Yassavi,37,State,University,rector@ayu.edu.kz,ayu.edu.kz,No
+Pavlodar,Pavlodar State University named after S. Toraigyrov,38,State,University,pgu@psu.kz,psu.kz,Yes
+Rudny,Rudny Industrial Institute,39,State,Institute,info@rii.kz,rii.kz,No
+Petropavlovsk,North Kazakhstan State University named after M. Kozybaev,40,State,University,mail@nkzu.kz,nkzu.kz,Yes
+Families,Shakarim Semey State University,42,State,University,semgu@bk.ru,semgu.kz,No
+Taraz,Taraz State University named after M. Dulati,43,State,University,info@tarsu.kz,tarsu.kz,Yes
+Shymkent,South Kazakhstan State University named after M.O. Auezov,45,State,University,canselyarya@mail.ru,ukgu.kz,No
+Astana,Eurasian Humanities Institute,47,Private,Institute,eagi@list.ru,egi.kz,No
+Almaty,Kazakh Academy of Labor and Social Relations,48,Private,Academy,kaz_atso@mail.ru,atso.kz,No
+Almaty,Kazakhstan Engineering and Technology University,49,Private,University,info@kazetu.kz,kazetu.kz,No
+Almaty,Almaty Technological University,53,Private,University,atukz@mail.ru,atu.kz,No
+Almaty,Almaty University of Energy and Communications,57,Stocked,University,aues@aues.kz,aues.kz,Yes
+Almaty,University of International Business,69,Private,University,uib@uib.kz,uib.kz,No
+Almaty,Kazakh Automobile and Road Academy named after L. Goncharov,78,Private,Institute,kazadi@kazadi.kz,kazadi.kz,No
+Almaty,Caspian Public University,79,Private,University,cu@cu.edu.kz,cu.edu.kz/,No
+Almaty,Kazakh-Russian Medical University,80,Private,University,nuo_kmu@mail.ru,medkrmu.kz/,No
+Almaty,Kazakh-German University,82,Private,University,info@dku.kz,dku.kz,No
+Taldykorgan,Academy of Economics and Law named after O. A. Dzholdasbekov,90,Private,Academy,dzholdasbekov@rambler.ru,vuz.ucoz.kz,No
+Almaty,University of Turan,93,Private,University,info@turan-edu.kz,turan-edu.kz/,No
+Almaty,Central Asian University,96,Private,University,info@cau.kz,cau.kz,No
+Aktobe,Kazakh-Russian International University,103,Private,University,strkrmu2015@mail.ru,krmu.kz,No
+Karaganda,"Academy ""Bolashak""",116,Private,Academy,ku_bolashak@mail.ru,kubolashak.kz,No
+Karaganda,"Karaganda University ""Bolashak""",116,-,-,-,-,No
+Karaganda,Karaganda Economic University of Kazpotrebsoyuz,122,Private,University,mail@keu.kz,keu.kz,No
+Kyzylorda,"Humanitarian and Technical Institute ""Akmeshit""",127,Private,Institute,akmeshit@mail.ru,akmechit.kz,No
+Shymkent,Miras University,133,Private,University,info@miras.edu.kz,miras.edu.kz,No
+Shymkent,International University of Humanities and Technology,137,Stocked,University,mgtu-shymkent@mail.ru,hgtu.kz,No
+Kostanay,Kostanay Engineering and Economic University named after M. Dulatov,140,Private,University,adm@kineu.kz,kineu.kz,No
+Families,Kazakh Humanitarian Law Innovation University,141,Private,University,semey_urist@mail.ru,kazguiu.kz,Yes
+Zhetisay,Syrdaria University,143,Private,University,sirdariya@mail.ru,sirdariya.kz,No
+Kostanay,Kostanay socio-technical university named after Z. Aldamzhar,145,Private,University,pkkstu@mail.ru,kosstu.kz,No
+Pavlodar,Innovative Eurasian University,146,Private,University,referent@ineu.edu.kz,ineu.edu.kz,No
+Kokshetau,Humanitarian Technical Academy,151,Private,Academy,info@GTA.kz,GTA.kz,No
+Ust-Kamenogorsk,Kazakh-American Free University,153,Private,University,kafu_ukg@mail.ru,kafu.kz,No
+Almaty,Almaty Academy of Economics and Statistics,154,Private,Academy,aesa2005@mail.ru,aesa.kz,No
+Kokshetau,Kokshetau University named after A. Myrzakhmetov,158,Private,University,kuam-kokchetau@mail.ru,kuam.kz,Yes
+Almaty,Eurasian Technical University,160,Private,University,info@etu.edu.kz,etu.edu.kz,No
+Almaty,Kazakh University of Railways,162,Private,University,kups1@mail.ru,kuwc.kz,No
+Astana,"Kazakh University of Economics, Finance and International Trade",173,Private,University,mailbox@kuef.kz,kuef.kz,No
+Astana,Kazakh Humanitarian Law University,174,Stocked,University,Info@kazguu.kz,kazguu.kz,Yes
+Astana,Kazakh University of Technology and Business,182,Private,University,akutb@mail.ru,kazutb.kz,No
+Astana,"University ""Turan — Astana""",184,Private,University,turan-astana@mail.ru,turan-astana.kz,No
+Shymkent,South Kazakhstan Pedagogical University,186,Private,University,ukpu_kaz@mail.ru,ukpu.kz,No
+Almaty,International University of Information Technology,190,Stocked,University,info@iitu.kz,iitu.kz,No
+Astana,Financial Academy,191,Private,Academy,-,fin-academy.kz,No
+Astana,Astana University,194,Private,University,astanauniver@mail.ru,cau.kz,No
+Aktau,Mangistau University of Humanities and Technology,195,private,University,mgtukz@mail.ru,mgtu-aktau.kz,No
+Shymkent,South Kazakhstan State Pedagogical Institute,196,State,Institute,okmpi@mail.ru,okmpi.kz,No
+Karaganda,Central Kazakhstan Academy,197,Private,Academy,cka_kz@mail.ru,cka.kz,No
+Uralsk,West Kazakhstan Innovation and Technology University,198,State,University,-,wkitu@mail.ru,No
+Uralsk,Kazakhstan University of Innovation and Telecommunication Systems,199,Private,University,-,univers.kz,No
+Almaty,Eurasian Law Academy named after D. Kunaev,200,Private,University,vuzkunaeva@vuzkunaeva.kz,,No
+Shymkent,Kazakhstan Engineering and Pedagogical University of Friendship of Peoples,202,Private,University,info@kipudn.kz,kipudn.kz,No
+Shymkent,Kazakhstan Engineering and Pedagogical University of Friendship of Peoples,202,Private,University,info@kazetu.kz,kazetu.kz,No
+Shymkent,Regional Social Innovation University,203,Private,University,rsiu2012@mail.ru,rsiu.kz,No
+Astana,Kazakh National Academy of ChRudnyography,206,Private,Academy,-,balletacademy.kz/ru/home-ru/,No
+Taraz,Taraz University of Humanities and Innovation,223,Private,University,Tigu_kz@mail.ru,tiqu.kz,Yes
+Almaty,University named after Suleiman Demirel,302,Private,University,info@sdu.edu.kz,sdu.edu.kz,No
+Kyzylorda,University Bolashak,305,Private,University,bolashak_5@mail.ru,bolashak-edu.kz,No
+Almaty,Military Institute of the Ground Forces of the Ministry of Defense of the Republic of Kazakhstan,350,Non-civilian,Institute,-,mod.gov.kz,No
+Aktobe,Military Institute of the Air Defense Forces of the Ministry of Defense of the Republic of Kazakhstan,351,Non-civilian,Institute,visvo@rambler.ru,-,No
+Kokshetau,Kokshetau Technical Institute of the Ministry of Emergencies of the Republic of Kazakhstan,353,Non-civilian,Institute,kti.mchs@mail.ru,kti-tjm.kz,No
+Almaty,Almaty Academy of the Ministry of Internal Affairs of the Republic of Kazakhstan named after Makan Yesbulatov,354,Non-civilian,Academy,akademy_mvd@mail.ru,aacademymvd.kz,No
+Karaganda,Karaganda Academy of the Ministry of Internal Affairs of the Republic of Kazakhstan named after B. Beisenov,355,Non-civilian,Academy,karurinst@rambler.ru,kzi.kz,No
+Petropavlovsk,Military Institute of the National Guard of the Republic of Kazakhstan,357,Non-civilian,Institute,info@vivv.kz,vivv.kz,No
+Almaty,Military Engineering Institute of Radio Electronics and Communications of the Ministry of Defense of the Republic of Kazakhstan,359,Non-civilian,Institute,viiy57@mail.ru,mod.gov.kz,No
+Shymkent,South Kazakhstan Humanitarian Institute named after M. Saparbayev,413,Private,Institute,ukgi2002@mail.ru,ukgi.kz/,No
+Shymkent,Shymkent University,414,Private,University,shimunivers@shym.kz,univershu.kz,No
+Aktobe,Aktobe University S. Baisheva,416,Private,University,eduausb@mail.ru,vuzbaishev.kz,No
+Almaty,University of FRudnyign Languages ​​and Business Careers,419,Private,University,ydu2006@mail.ru,ydu.kz,No
+Almaty,Kazakh-British Technical University,421,Private,University,kense@kbtu.kz,kbtu.kz,No
+Uralsk,West Kazakhstan Agrarian and Technical University named after Zhangir Khan,501,State,University,-,-,No
+Almaty,"Egyptian University of Islamic Culture ""Nur-Mubarak""",503,Private,University,nur-mubarak2001@mail.ru,nmu.kz,No
+Taraz,Taraz State Pedagogical University,515,State,Institute,targpi@mail.ru,tarmpi.kz,No
+Kostanay,Kostanay State Pedagogical Institute,516,State,Institute,kgpi118@mail.ru,kspi.kz,No
+Pavlodar,Pavlodar State Pedagogical Institute,517,State,Institute,priempspi@gmail.com,ppi.kz,No
+Almaty,Academy of the Border Guard Service of the National Security Committee of the Republic of Kazakhstan,518,Non-civilian,Academy,ku_bolashak@mail.ru,knb.kz,No
+Almaty,"Kazakhstan Institute of Management, Economics and FRudnycasting",979,Stocked,Institute,astnedop@kimep.kz,kimep.kz,No
+Almaty,Almaty Management University,0,Private,University,astana@almau.edu.kz,almau.edu.kz,No

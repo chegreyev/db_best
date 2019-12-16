@@ -120,6 +120,7 @@ def registerUser(user_id , user_login , password):
     }
 
     requests.post(users_url , data)
+    
 # Register data for rating the University
 def registerUserRating(user_id , profession , universitie_name , university_rating):
     global users_rating_url
